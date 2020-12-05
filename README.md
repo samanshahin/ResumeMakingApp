@@ -1,2 +1,2 @@
 # ResumeMakingApp
- developed with jQuery
+ This project is made and developed with jQuery.
