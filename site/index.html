@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="resume making app">
+    <meta name="developper" content="Saman Shahinpour">
+    <meta name="email" content="saman_shahin@yahoo.com">
+    <title>RESUME MAKING</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/"> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.5/examples/album/album.css" rel="stylesheet">
+    <link rel="stylesheet" href="/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="collapse bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4 class="text-white">About</h4>
+                            <p class="text-muted">First step in looking a job is designing and providing a good resume,
+                                so
+                                this app is designed to help job seekers, looking for their desired job well.</p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4 class="text-white">Contact</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.sais.ir" class="text-white">Main Website</a></li>
+                                <li><a href="#" class="text-white">Like on Instagram</a></li>
+                                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                                <li><a href="emailto:saman_shahin@yahoo.com" class="text-white">Email me</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container d-flex justify-content-between">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <strong>RESUME MAKING</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                        aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        $(document).ready(function () {
+            $("#themetwo").hide();
+            $("#themethree").hide();
+            $("#themeone").hide();
+            //for theme 1
+            $("#t1-fname-edit").hide();
+            $("#t1-mainoccup-edit").hide();
+            $("#t1-description-edit").hide();
+            $("#t1-email-edit").hide();
+            $("#t1-phone-edit").hide();
+            $("#t1-addr-edit").hide();
+            $("#t1-webaddr-edit").hide();
+            $("#t1-fbacc-edit").hide();
+            //for theme 2:
+            $("#t2-fname-edit").hide();
+            $("#t2-mainoccup-edit").hide();
+            $("#t2-email-edit").hide();
+            $("#t2-phone-edit").hide();
+            $("#t2-addr-edit").hide();
+            $("#t2-fbacc-edit").hide();
+            $("#t2-resumeobj-edit").hide();
+            //for theme 3
+            $("#t3-profile-edit").hide();
+            $("#t3-mainoccup-edit").hide();
+            $("#t3-fname-edit").hide();
+            $("#t3-email-edit").hide();
+            $("#t3-phone-edit").hide();
+            $("#t3-addr-edit").hide();
+            $("#t3-fbacc-edit").hide();
+
+
+
+        });
+    </script>
+
+    <main role="main">
+        <div id="themebtn" class="container textCenter">
+            <div id="th1-btn" class="btn btn-warning my-2">Theme 1</div>
+            <div id="th2-btn" class="btn btn-warning my-2">Theme 2</div>
+            <div id="th3-btn" class="btn btn-warning my-2">Theme 3</div>
+        </div>
+        <!-- Theme 1 -->
+        <div id="themeone" class="album">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                            aria-label="Placeholder: Thumbnail">
+                            <rect width="100%" height="100%" fill="#FFFFFF" />
+                        </svg>
+                    </div>
+                    <div class="col-md-10">
+                        <div id="t1-fullname" class="">
+                            <h1>
+                                <input type="text" id="t1-fname" name="t1-fname" placeholder="Enter Your Full Name...">
+                            </h1>
+                            <svg id="t1-fname-edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                            </svg>
+
+                        </div>
+                        <div id="t1-mainoccup" class="MainOccupation">
+                            <h5><input type="text" id="t1-moccup" name="t1-moccup"
+                                    placeholder="Enter Your Occupation..."></h5>
+                            <svg id="t1-mainoccup-edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                            </svg>
+                        </div>
+                        <div id="t1-description" class="card-text">
+                            <h7><textarea id="t1-desc" name="t1-desc" rows="4" cols="80"
+                                    placeholder="Introduce Yourself..."></textarea></h7>
+                            <svg id="t1-description-edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container contactdiv textCenter">
+                <div class="row">
+                    <div id="t1-emailaddr" class="col-sm-3 textCenter">
+                        <input type="text" id="t1-email" name="t1-email" placeholder="e.g.: mail@example.com...">
+                        <svg id="t1-email-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                        </svg>
+                        <span id="t1-email-span"></span>
+                    </div>
+                    <div id="t1-phonenumber" class="col-sm-2 textCenter">
+                        <input type="text" id="t1-phone" name="t1-phone" placeholder="e.g.: +44 123 456 4789">
+                        <svg id="t1-phone-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                        </svg>
+                        <span id="t1-phone-span"></span>
+                    </div>
+                    <div id="t1-address" class="col-sm-2 textCenter">
+                        <input type="text" id="t1-addr" name="t1-addr" placeholder="e.g.: Paris, France">
+                        <svg id="t1-addr-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                        </svg>
+                        <span id="t1-addr-span"></span>
+                    </div>
+                    <div id="t1-webaddr" class="col-sm-3 textCenter">
+                        <input type="text" id="t1-webaddress" name="t1-webaddress" placeholder="e.g.: www.example.com">
+                        <svg id="t1-webaddr-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                        </svg>
+                        <span id="t1-webaddr-span"></span>
+                    </div>
+                    <div id="t1-fbacc" class="col-sm-2 textCenter">
+                        <input type="text" id="t1-fb" name="t1-fb" placeholder="e.g.: @example">
+                        <svg id="t1-fbacc-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                        </svg>
+                        <span id="t1-fbacc-span"></span>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <h3>WORK EXPERIENCE <svg id="t1-plusjb" class="plus" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg>
+                            </h3>
+                            <div>
+                                <input type="text" id="t1-jbt" name="t1-jbt" placeholder="Job Title">
+                                <input type="text" id="t1-compName" name="t1-compName" placeholder="Company Name">
+                                <input type="text" id="t1-jbdtfrom" name="t1-jbdtfrom" placeholder="From...">
+                                <input type="text" id="t1-jbdtto" name="t1-jbdtto" placeholder="To...">
+                                <textarea id="t1-jbdesc" name="t1-jbdesc" rows="4" cols="50"
+                                    placeholder="Job Description (Optional)..."></textarea>
+                            </div>
+                            <div id="t1-jobitem">
+
+                            </div>
+
+                        </div>
+                        <div class="mb-4">
+                            <h3>EDUCATION <svg id="t1-plusedu" class="plus" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg></h3>
+
+                            <div>
+                                <input type="text" id="t1-edutlt" name="t1-edutlt" placeholder="Field Title">
+                                <input type="text" id="t1-UniName" name="t1-UniName" placeholder="Uni/College Name">
+                                <input type="text" id="t1-edufrom" name="t1-edufrom" placeholder="From...">
+                                <input type="text" id="t1-eduto" name="t1-eduto" placeholder="To...">
+                            </div>
+                            <div id="t1-eduitem">
+
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>PROJECTS <svg id="t1-plusproj" class="plus" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg></h3>
+
+                            <div>
+                                <input type="text" id="t1-projtlt" name="t1-projtlt" placeholder="Project Title">
+                                <textarea id="t1-projdesc" name="t1-projdesc" rows="4" cols="50"
+                                    placeholder="Prject Description ..."></textarea>
+                            </div>
+                            <div id="t1-projitem">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-4">
+                            <h3>SKILLS <svg id="t1-plusskill" class="plus" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg></h3>
+
+                            <div>
+                                <input type="text" id="t1-skilltlt" name="t1-skilltlt" placeholder="Skill Title">
+                                <input type="text" id="t1-skillprof" name="t1-skillprof"
+                                    placeholder="e.g.: Expert, Moderate, Newbie">
+                            </div>
+                            <div id="t1-skillitem">
+
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>TECHNICAL (IT) SKILLS
+                                <svg id="t1-plustechskill" class="plus" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg></h3>
+                            <div>
+                                <input type="text" id="t1-techskillt" name="t1-techskillt"
+                                    placeholder="Tech Skill Title">
+                            </div>
+                            <div id="t1-techskillitem">
+
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>LANGUAGES <svg id="t1-pluslang" class="plus" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg></h3>
+                            <div>
+                                <input type="text" id="t1-langt" name="t1-langt" placeholder="Language Title">
+                                <input type="text" id="t1-langprof" name="t1-langprof"
+                                    placeholder="e.g.: Expert, Moderate, Newbie">
+                            </div>
+                            <div id="t1-langitem">
+
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>INTERESTS <svg id="t1-plusiter" class="plus" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg></h3>
+                            <div>
+                                <input type="text" id="t1-intert" name="t1-intert" placeholder="Interest Title">
+                            </div>
+                            <p id="t1-interitems">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container textCenter">
+            <div id="t1-print" class="btn btn-success my-2">Print</div>
+        </div>
+        <!-- Theme 2 -->
+        <div id="themetwo" class="album">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-4 bg-warning">
+                            <div class="card-body">
+                                <div id="t2-fullname" style="text-transform: uppercase;">
+                                    <h2><input type="text" id="t2-fname" name="t2-fname"
+                                            placeholder="Enter Your Fullname..." size=15>
+                                    </h2>
+                                    <svg id="t2-fname-edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                </div>
+                                <div id="t2-mainoccup" class="MainOccupation2">
+                                    <h5><input type="text" id="t2-moccup" name="t2-moccup"
+                                            placeholder="Your Occupation..."></h5>
+                                    <svg id="t2-mainoccup-edit" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="card-body"></div>
+                            <div class="card-body">
+                                <div id="t2-emailAddr">
+                                    <svg class="svg-icon" viewBox="0 0 20 20" width="15" height="15">
+                                        <path
+                                            d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z">
+                                        </path>
+                                    </svg>
+                                    <input type="text" id="t2-email" name="t2-email"
+                                        placeholder="e.g.: mail@example.com...">
+                                    <svg id="t2-email-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                    <span id="t2-email-span"></span>
+                                </div>
+                                <div id="t2-phoneNumber">
+                                    <svg class="svg-icon" viewBox="0 0 20 20" width="15" height="15">
+                                        <path
+                                            d="M13.372,1.781H6.628c-0.696,0-1.265,0.569-1.265,1.265v13.91c0,0.695,0.569,1.265,1.265,1.265h6.744c0.695,0,1.265-0.569,1.265-1.265V3.045C14.637,2.35,14.067,1.781,13.372,1.781 M13.794,16.955c0,0.228-0.194,0.421-0.422,0.421H6.628c-0.228,0-0.421-0.193-0.421-0.421v-0.843h7.587V16.955z M13.794,15.269H6.207V4.731h7.587V15.269z M13.794,3.888H6.207V3.045c0-0.228,0.194-0.421,0.421-0.421h6.744c0.228,0,0.422,0.194,0.422,0.421V3.888z">
+                                        </path>
+                                    </svg>
+                                    <input type="text" id="t2-phone" name="t2-phone"
+                                        placeholder="e.g.: +44 123 456 789">
+                                    <svg id="t2-phone-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                    <span id="t2-phone-span"></span>
+                                </div>
+                                <div id="t2-Address">
+                                    <svg class="svg-icon" viewBox="0 0 20 20" width="15" height="15">
+                                        <path
+                                            d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589">
+                                        </path>
+                                    </svg>
+                                    <input type="text" id="t2-Addr" name="t2-Addr"
+                                        placeholder="e.g.: Nno. 12, Elyssee St. Paris, France">
+                                    <svg id="t2-addr-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                    <span id="t2-addr-span"></span>
+                                </div>
+                                <div id="t2-fbacc">
+                                    <svg class="svg-icon" viewBox="0 0 20 20" width="15" height="15">
+                                        <path
+                                            d="M11.344,5.71c0-0.73,0.074-1.122,1.199-1.122h1.502V1.871h-2.404c-2.886,0-3.903,1.36-3.903,3.646v1.765h-1.8V10h1.8v8.128h3.601V10h2.403l0.32-2.718h-2.724L11.344,5.71z">
+                                        </path>
+                                    </svg>
+                                    <input type="text" id="t2-fb" name="t2-fb" placeholder="e.g.: @example">
+                                    <svg id="t2-fbacc-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                    <span id="t2-fbacc-span"></span>
+                                </div>
+                            </div>
+                            <div class="card-body"></div>
+                            <hr>
+                            <div class="card-body">
+                                <h4>SKILLS <svg id="t2-plusskill" class="plus" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                    </svg></h4>
+                                <div>
+                                    <input type="text" id="t2-skill" name="t2-skill"
+                                        placeholder="e.g.: Problem Solving">
+                                </div>
+                                <div id="t2-skillitem">
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <h4>EDUCATION <svg id="t2-plusedu" class="plus" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                    </svg></h4>
+                                <div>
+                                    <input type="text" id="t2-edutlt" name="t2-edutlt" placeholder="Field Title">
+                                    <input type="text" id="t2-Unitlt" name="t2-Unitlt" placeholder="University/College">
+                                    <input type="text" id="t2-edudate" name="t2-edudate" placeholder="e.g.: 2018-2020">
+                                </div>
+                                <div id="t2-eduitem">
+
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <h4>INTERESTS <svg id="t2-plusinter" class="plus" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                    </svg></h4>
+                                <div>
+                                    <input type="text" id="t2-interitem" name="t2-interitem" placeholder="Title">
+                                </div>
+                                <div id="t2-intertitles">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mb-8">
+                            <div class="card-body">
+                                <h3>RESUME OBJECTIVE</h3>
+                                <div id="t2-resumeobj">
+                                    <h7><textarea id="t2-resumeobjective" name="t2-resumeobjective" rows="4" cols="50"
+                                            placeholder="Short Description"></textarea>
+                                    </h7>
+                                    <svg id="t2-resumeobj-edit" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                </div>
+
+                            </div>
+                            <div class="card-body">
+                                <h3>WORK EXPERIENCE <svg id="t2-plusworkexp" class="plus"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                    </svg></h3>
+                                <div>
+                                    <input type="text" id="t2-workexptitle" name="t2-workexptitle"
+                                        placeholder="Job Title">
+                                    <input type="text" id="t2-compName" name="t2-compName" placeholder="Company Name">
+                                    <input type="text" id="t2-workdatefrom" name="t2-workdatefrom"
+                                        placeholder="From...">
+                                    <input type="text" id="t2-workdateto" name="t2-workdateto" placeholder="To...">
+                                    <textarea id="t2-workdesc" name="t2-workdesc" rows="4" cols="50"
+                                        placeholder="Short Description ..."></textarea>
+                                </div>
+                                <div id="t2-workexp">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container textCenter">
+                <div id="t2-print" class="btn btn-success my-2">Print</div>
+            </div>
+        </div>
+        <!-- Theme 3 -->
+        <div id="themethree" class="album">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                            aria-label="Placeholder: Thumbnail">
+                            <rect width="100%" height="100%" fill="#FFFFFF" />
+                        </svg>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 id="fullname" class="t3-title">PROFILE</h3>
+                        <div id="t3-profile">
+                            <h7><textarea id="t3-profiletext" name="t3-profiletext" rows="4" cols="50"
+                                    placeholder="Short Description ..."></textarea></h7>
+                            <svg id="t3-profile-edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container t3-fullname">
+                <div class="row">
+                    <div id="t3-mainoccup" class="col-md-4 t3-occutitle">
+                        <input type="text" id="t3-Occuptlt" name="t3-Occuptlt" placeholder="Occupation Title" size=15>
+                        <span id="t3-mainoccup-span"></span>
+                        <svg id="t3-mainoccup-edit" xmlns="http://www.w3.org/2000/svg" fill="white" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                        </svg>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 id="t3-fullname" class="">
+                            <input type="text" id="t3-fname" name="t3-fname" placeholder="Full Name" size=15>
+                            <span id="t3-fname-span"></span>
+                        </h1>
+                        <svg id="t3-fname-edit" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-4">
+                            <div class="card-body bg-secondary" style="color: white;">
+                                <div id="t3-Address">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" />
+                                    </svg>
+                                    <input type="text" id="t3-Addr" name="t3-Addr" placeholder="Address">
+                                    <svg id="t3-addr-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                    <span id="t3-addr-span"></span>
+                                </div>
+                                <div id="t3-PhoneNumber">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                                        <path
+                                            d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z" />
+                                    </svg>
+                                    <input type="text" id="t3-phone" name="t3-phone"
+                                        placeholder="e.g.: +44 123 456 789">
+                                    <svg id="t3-phone-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                    <span id="t3-phone-span"></span>
+                                </div>
+                                <div id="t3-emailAddr">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z" />
+                                    </svg>
+                                    <input type="text" id="t3-email" name="t3-email"
+                                        placeholder="e.g.: saman_shahin@yahoo.com">
+                                    <svg id="t3-email-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                    <span id="t3-email-span"></span>
+                                </div>
+                                <div id="t3-fbacc">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
+                                        <path
+                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                    </svg>
+                                    <input type="text" id="t3-fb" name="t3-fb" placeholder="e.g.: @example">
+                                    <svg id="t3-fbacc-edit" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.078 4.232l-12.64 12.639-1.438 7.129 7.127-1.438 12.641-12.64-5.69-5.69zm-10.369 14.893l-.85-.85 11.141-11.125.849.849-11.14 11.126zm2.008 2.008l-.85-.85 11.141-11.125.85.85-11.141 11.125zm18.283-15.444l-2.816 2.818-5.691-5.691 2.816-2.816 5.691 5.689z" />
+                                    </svg>
+                                    <span id="t3-fbacc-span"></span>
+                                </div>
+                            </div>
+                            <div class="card-body bg-dark">
+                                <h4 style="color: white; font-weight: 550;">EXPERTISE <svg id="t3-plusexp" class="plus"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                    </svg></h4>
+                                <div>
+                                    <input type="text" id="t3-skilltlt" name="t3-skilltlt" placeholder="Skill Title">
+                                    <input type="text" id="t3-skillexpertis" name="t3-skillexpertis"
+                                        placeholder="e.g.: Expert, Moderate, Newbie">
+                                </div>
+                                <div id="t3-skillitems">
+
+                                </div>
+
+                            </div>
+                            <div class="card-body bg-black">
+                                <h4 style="color: white; font-weight: 550;">EDUCATION <svg id="t3-plusedu" class="plus"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                    </svg></h4>
+                                <div>
+                                    <input type="text" id="t3-edutlt" name="t3-edutlt" placeholder="Field Title">
+                                    <input type="text" id="t3-UniCol" name="t3-UniCol" placeholder="University/College">
+                                    <input type="text" id="t3-edudate" name="t3-edudate" placeholder="2018-2020">
+                                </div>
+                                <div id="t3-eduitems">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mb-8" style="padding-top: 25px;">
+                            <h3 class="t3-title">WORK EXPERIENCE <svg id="t3-plusworkexp" class="plus"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg></h3>
+                            <p></p>
+                            <div>
+                                <input type="text" id="t3-jbtlt" name="t3-jbtlt" placeholder="Job Title">
+                                <input type="text" id="t3-compName" name="t3-compName" placeholder="Company Name">
+                                <input type="text" id="t3-workdate" name="t3-workdate" placeholder="2018-2020">
+                                <textarea id="t3-workdesc" name="t3-workdesc" rows="4" cols="50"
+                                    placeholder="Short Description ..."></textarea>
+                            </div>
+                            <div id="t3-workexpitems">
+
+                            </div>
+                            <h3 class="t3-title">INTERESTS <svg id="t3-plusinter" class="plus"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z" />
+                                </svg></h3>
+                            <div>
+                                <input type="text" id="t3-intertlt" name="t3-intertlt" placeholder="Interest Title">
+                            </div>
+                            <p id="t3-interitems">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container textCenter">
+                <div id="t3-print" class="btn btn-success my-2">Print</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer-bar" class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Resume Making is an application to make part of your life easier. Just feel free to use it and of course
+                if you're a web developper, you can copy and use codes but don't forget to mention our name. This app is
+                based on
+                Bootstrap, jQuery and Vuejs.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+    <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

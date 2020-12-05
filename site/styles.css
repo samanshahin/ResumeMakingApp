@@ -1,0 +1,133 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.MainOccupation {
+    color: dimgray;
+}
+
+.contactdiv {
+    font-size: small;
+    padding: 10px;
+    background-color: rgb(184, 187, 189);
+}
+
+.jobtitle {
+    font-weight: 700;
+}
+
+h3,
+h4,
+h5,
+h6,
+.MainOccupation2 {
+    color: black;
+}
+
+.dateTime {
+    color: dimgray;
+}
+
+p {
+    padding-bottom: 0;
+}
+
+.mb-4 {
+    padding-bottom: 10;
+}
+
+.badge,
+.badge-dark {
+    color: rgb(51, 51, 51);
+}
+
+.row {
+    padding-bottom: 0;
+}
+
+.techskilltitle {
+    font-weight: 700;
+}
+
+.interests {
+    margin-right: 15;
+
+}
+
+.side-bar {
+    background-color: rgb(221, 172, 47);
+}
+
+hr {
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.t3-title {
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 184, 42);
+    text-decoration-style: solid;
+    text-decoration-thickness: 4px;
+}
+
+.t3-fullname {
+    background-color: rgb(253, 255, 145);
+    padding: 25px;
+}
+
+.t3-occutitle {
+    background-color: black;
+    padding: 15px 5px 15px 40px;
+    color: white;
+    text-justify: center;
+    font-size: x-large;
+}
+
+.bg-black {
+    background-color: rgb(22, 22, 22);
+}
+
+.bg-black,
+.bg-bg-secondary,
+.bg-dark {
+    color: white;
+}
+
+.bg-secondary svg {
+    fill: white;
+}
+
+span.badge-warning {
+    color: yellow;
+}
+
+#themeone svg {
+    fill: lightseagreen;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+}
+#themeone svg:hover{
+    fill: green;
+} 
+#themeone input, textarea{
+    border-width: 0px 0px 1px 0px;
+}
